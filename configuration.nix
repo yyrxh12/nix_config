@@ -25,6 +25,8 @@
     dates = "weekly";
     options = "--delete-older-than 1w";
  };
+ 
+ 
  nix.settings.auto-optimise-store = true;
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -124,7 +126,6 @@
   #   enableSSHSupport = true;
   # };
   nixpkgs.overlays = [
-    
   
 (self: super: {
   discord = super.discord.overrideAttrs (

@@ -6,7 +6,7 @@
   home.homeDirectory = "/home/nixxyd";
   
   
-
+  services.emacs.enable = true;
   programs.alacritty = {
     enable = true;
     # custom settings
