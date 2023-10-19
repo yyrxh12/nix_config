@@ -28,7 +28,7 @@ outputs = {self, nixpkgs, home-manager,nix-doom-emacs, ...}@inputs: {
 					imports = [nix-doom-emacs.hmModule ./home.nix];
 					programs.doom-emacs = {
 					enable = true;
-					doomPrivateDir = /home/nixxyd/nix_config/doom.d;
+					doomPrivateDir = ./doom.d;
 			
 
 			};

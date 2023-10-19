@@ -6,7 +6,11 @@
   home.homeDirectory = "/home/nixxyd";
   
   
-  services.emacs.enable = true;
+  services.emacs = {
+    enable = true;
+    startWithUserSession = "graphical";
+    extraOptions = ["-fs"];
+};
   programs.alacritty = {
     enable = true;
     # custom settings
