@@ -25,7 +25,7 @@ outputs = {self, nixpkgs, home-manager,nix-doom-emacs, ...}@inputs: {
 				home-manager.useUserPackages = true;
 
 				home-manager.users.nixxyd = {...}: {
-					imports = [nix-doom-emacs.hmModule ./home.nix];
+					imports = [nix-doom-emacs.hmModule ./home.nix ./cpp-dev-env-flake.nix];
 					programs.doom-emacs = {
 					enable = true;
 					doomPrivateDir = ./doom.d;
